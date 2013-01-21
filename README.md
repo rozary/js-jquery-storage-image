@@ -5,11 +5,11 @@ javascript jquery plugin
 
 Sample
 ------
-  /
-  ├── index.html
-  ├── jquery.min.js
-  ├── jquery.storage.image.js
-  └── image.png
+    /
+    ├── index.html
+    ├── jquery.min.js
+    ├── jquery.storage.image.js
+    └── image.png
 
 index.html
 ----------------
