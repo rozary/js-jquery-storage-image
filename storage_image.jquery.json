@@ -1,0 +1,25 @@
+{
+  "name": "storage_image",
+  "version": "0.0.1",
+  "title": "jQuery StorageImage",
+  "author": {
+    "name": "rozary",
+    "url": "https://github.com/rozary/js-jquery-storage-image"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://opensource.org/licenses/mit-license.php"
+    }
+  ],
+  "dependencies": {
+    "jquery": ">=1.7.2"
+  },
+  "description": "Image stored in the localStorage,using canvas",
+  "keywords": [
+    "localStorage",
+    "image",
+    "HTML5",
+    "canvas",
+   ],
+}
