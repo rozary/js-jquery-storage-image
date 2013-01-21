@@ -5,16 +5,16 @@ javascript jquery plugin
 
 Sample
 ------
-/
-├── index.html
-├── jquery.min.js
-├── jquery.storage.image.js
-└── image.png
+  /
+  ├── index.html
+  ├── jquery.min.js
+  ├── jquery.storage.image.js
+  └── image.png
 
 index.html
 ----------------
     $(function() {
-      $("#image").storageImage("image.png");
+      $("#image").storageImage("./image.png");
     });
 
     <img id="image" />
