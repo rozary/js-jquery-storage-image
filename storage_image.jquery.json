@@ -1,6 +1,6 @@
 {
   "name": "storage_image",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "title": "jQuery StorageImage",
   "author": {
     "name": "rozary",
@@ -16,10 +16,5 @@
     "jquery": ">=1.7.2"
   },
   "description": "Image stored in the localStorage,using canvas",
-  "keywords": [
-    "localStorage",
-    "image",
-    "HTML5",
-    "canvas",
-   ],
+  "keywords": [ "localStorage", "image", "HTML5", "canvas", ]
 }
