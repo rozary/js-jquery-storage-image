@@ -3,8 +3,8 @@ js-jquery-storage-image
 
 javascript jquery plugin
 
-Sample
-------
+Example
+-------
     /
     ├── index.html
     ├── jquery.min.js
@@ -12,7 +12,7 @@ Sample
     └── image.png
 
 index.html
-----------------
+----------
     <script src="./jquery.min.js"></script>
     <script src="./jquery.storage.image.js"></script>
     
