@@ -7,21 +7,23 @@ Example
 -------
     /
     ├── index.html
-    ├── jquery.min.js
     ├── jquery.storage.image.js
     └── image.png
 
 index.html
 ----------
-    <script src="./jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
     <script src="./jquery.storage.image.js"></script>
     
     <script type="text/javascript">
     $(function() {
-      $("#image").storageImage("./image.png");
+      var version = "0.0.1";  //(optional)version change is saved by the new key.
+      $("#image1").storageImage("./image.png",version);
+      $("#image2").storageImage("./image.png",version);
     });
     </script>
 
     <body>
-    <img id="image" />
+      <img id="image1" /> // src
+      <div id="image2"></div> // background-image
     </body>
