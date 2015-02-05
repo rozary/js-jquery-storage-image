@@ -13,6 +13,10 @@
     var selector = $(this).selector.slice(1);
 
     var setData = function (tgt,data_img) {
+      if (!data_img) {
+        console.log("no data_img");
+        return 1;
+      }
       var tag = tgt.tagName;
       if (tag == "DIV") {
         $(tgt).css("background-image","url(" + data_img + ")");
@@ -67,11 +71,25 @@
             canvas.height = img.height;
             ctx.drawImage(img,0,0);
             data_img = canvas.toDataURL();
-            lStorage.setItem(key, data_img);
+            //セットに失敗したら
+            //srcをそのままsetData
+            //そしてデータをクリアする
+            try {
+              lStorage.setItem(key, data_img);
+            } catch(e) {
+              if (e.name === 'QuotaExceededError' || e.name === 'NS_ERROR_DOM_QUOTA_REACHED') {
+                lStorage.clear();
+                data_img = imgSrc;
+              } else {
+                console.log(e);
+              }
+            };
+            //読み終わった後に実行
             setData(tgt,data_img);
           };
+        } else {
+          setData(tgt,data_img);
         }
-        setData(tgt,data_img);
       });
   };
 })(jQuery);
